@@ -29,7 +29,7 @@
 <div class="w3-content w3-display-middle">
   <div class="w3-container w3-center">
     <img src="images/logo.png" width="250px"><br><br>   
-    <a href="course.php" class="w3-button w3-large w3-theme-d3 w3-round-xxlarge">Join now</a> 
+    <a href="course.php" class="w3-button w3-medium w3-theme-d3 w3-round-xxlarge">Join now</a> 
   </div>
 </div>
 

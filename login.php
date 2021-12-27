@@ -98,9 +98,9 @@ if ( isset($_POST["login"])) {
 
 <div class="w3-container w3-margin-top w3-mobile">
 
-	<form action="" method="POST" class="w3-container w3-large w3-theme-d4">
+	<form action="" method="POST" class="w3-container w3-medium w3-theme-d4">
 
-	<h1>Log in</h1>
+	<h3>Log in</h3>
 <?php if (isset($error)) : ?>
 	<p style="color: red; font-style: italic;">Sorry, your password is incorrect</p>
 <?php endif; ?>
