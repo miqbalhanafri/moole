@@ -60,7 +60,6 @@ $tampil5 = query("SELECT progress.user, SUM(marketing.points) AS total5, user.us
 <link rel="stylesheet" href="style/warna.css">
 
 <style>
-
 .checked {
   color: orange;
 }
@@ -71,66 +70,19 @@ $tampil5 = query("SELECT progress.user, SUM(marketing.points) AS total5, user.us
   object-fit: cover;
 }
 
-
-
-
-.base-timer {
-  position: relative;
-  width: 300px;
-  height: 300px;
+body {
+  background-color: #e9f5ff;
 }
 
-.base-timer__svg {
-  transform: scaleX(-1);
-}
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
 
-.base-timer__circle {
-  fill: none;
-  stroke: none;
-}
-
-.base-timer__path-elapsed {
-  stroke-width: 7px;
-  stroke: grey;
-}
-
-.base-timer__path-remaining {
-  stroke-width: 7px;
-  stroke-linecap: round;
-  transform: rotate(90deg);
-  transform-origin: center;
-  transition: 1s linear all;
-  fill-rule: nonzero;
-  stroke: currentColor;
-}
-
-.base-timer__path-remaining.green {
-  color: #21a0fa;
-}
-
-.base-timer__path-remaining.orange {
-  color: orange;
-}
-
-.base-timer__path-remaining.red {
-  color: red;
-}
-
-.base-timer__label {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 70px;
-  color:#023e68;
-}
 
 </style>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Awal Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YBECQFTW99"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -139,66 +91,53 @@ $tampil5 = query("SELECT progress.user, SUM(marketing.points) AS total5, user.us
 
   gtag('config', 'G-YBECQFTW99');
 </script>
+<!-- Akhir Global site tag (gtag.js) - Google Analytics -->
 
+<!-- Awal Script W3.JS -->
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<!-- Akhir Script W3.JS -->
  
-<body class="w3-theme-l5">
-
-<!-- 
-<div class="w3-sidebar w3-bar-block w3-theme-d3 w3-xxlarge" style="width:70px">
-  <a href="menu.php" class="w3-bar-item w3-button"><abbr title="Home"><i class="fa fa-home"></i></abbr></a> 
-  <a href="one.php" class="w3-bar-item w3-button"><abbr title="Leaderboard"><i class="fa fa-users"></i></abbr></a> 
-  <a href="two.php" class="w3-bar-item w3-button"><abbr title="Add Checklist"><i class="fas fa-tasks"></i></abbr></a> 
-  <a href="three.php" class="w3-bar-item w3-button"><abbr title="Chatting"><i class="fa fa-comments"></i></abbr></a>
-  <a href="logout.php" class="w3-bar-item w3-button"><abbr title="Log Out"><i class="fa fa-power-off"></i></abbr></a> 
-</div>
-
-<div style="margin-left:70px">
--->
-
+<body>
 
 <nav class="w3-sidebar w3-bar-block w3-card  w3-theme-d2" id="mySidebar">
-<div class="w3-container">
-  <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large"><i class="fa fa-close"></i></span>
-  <br>
-  <div class="w3-padding w3-center">
-    <a href="menu.php">
-      <img src="images/logo2.png" alt="moole" style="width:110px">
-    </a>
-  </div><br>
-  <div class="w3-padding w3-center">
-    <a href="profile.php" style="text-decoration:none;">
-      <img src="uploadfoto/5fbaaff143fa4.jpg" class="w3-circle bulat" alt="moole">	
-      <p>M. IQbaL Hanafri</p>
-    </a>
+  <div class="w3-container">
+    <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large"><i class="fa fa-close"></i></span>
+    <br>
+    <div class="w3-padding w3-center">
+      <a href="menu.php">
+        <img src="images/logo2.png" alt="moole" style="width:110px">
+      </a>
+    </div><br>
+    <div class="w3-padding w3-center">
+      <a href="profile.php" style="text-decoration:none;">
+        <img src="uploadfoto/5fbaaff143fa4.jpg" class="w3-circle bulat" alt="moole">	
+        <p>M. IQbaL Hanafri</p>
+        <img src="images/coin.png" alt="" width="30px"> 122
+      </a>
+    </div>
+    <br>
+    <a class="w3-bar-item w3-button" href="menu.php"><i class="fas fa-book"></i>&nbsp;&nbsp;Learn</a>
+    <a class="w3-bar-item w3-button" href="leaderboard.php"><i class="fas fa-award"></i>&nbsp;&nbsp;Rank</a>
+    <a class="w3-bar-item w3-button" href="chat.php"><i class="fas fa-comment"></i>&nbsp;&nbsp;Chat</a>
+    <a class="w3-bar-item w3-button" href="profile.php"><i class="fas fa-user-graduate"></i>&nbsp;&nbsp;Profile</a>
+    <a class="w3-bar-item w3-button" href="news.php"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;News</a>
+    <a class="w3-bar-item w3-button" href="logout.php"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;Log out</a>
   </div>
-  <br>
-<a class="w3-bar-item w3-button" href="menu.php"><i class="fas fa-book"></i>&nbsp;&nbsp;Learn</a>
-<a class="w3-bar-item w3-button" href="leaderboard.php"><i class="fas fa-award"></i>&nbsp;&nbsp;Leaderboard</a>
-<a class="w3-bar-item w3-button" href="chat.php"><i class="fas fa-comment"></i>&nbsp;&nbsp;Chat</a>
-<a class="w3-bar-item w3-button" href="profile.php"><i class="fas fa-user-graduate"></i>&nbsp;&nbsp;Profile</a>
-<a class="w3-bar-item w3-button" href="news.php"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;News</a>
-<a class="w3-bar-item w3-button" href="logout.php"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;Log out</a>
-</div>
 </nav>
 
 
-<!--
-<header class="w3-bar w3-card w3-theme">
-  <button class="w3-bar-item w3-button w3-xxlarge w3-hover-theme" onclick="openSidebar()"><i class="fa fa-bars"></i></button>
-  <div class="w3-padding w3-center">
-    <img src="images/logo.png" alt="avatar" style="width:120px">
-  </div>
-</header>
--->
-
+<!-- Awal header -->
 <header class="w3-bar w3-card w3-theme-d2">
 	<button class="w3-bar-item w3-button w3-large w3-hover-theme" onclick="openSidebar()"><i class="fa fa-bars"></i></button>  
-	<div class="w3-bar-item w3-button w3-large w3-hover-theme w3-right"><a href="logout.php"><i class="fas fa-stopwatch"></i></a></div>
-  <div class="w3-center">
-  	<h5>Chat zone</h5>
+	<div class="w3-bar-item w3-button w3-large w3-hover-theme w3-right">
+      <i type="button" onclick="themeToggle()" class="fas fa-lightbulb"></i>
+      <!--<div id="theme"></div>-->
   </div>
-
+  <div class="w3-center">
+  	<h5>Let's learn</h5>
+  </div>
 </header>
+<!-- Akhir header -->
 
 
 
@@ -210,56 +149,26 @@ $tampil5 = query("SELECT progress.user, SUM(marketing.points) AS total5, user.us
 <!-- Awal aplikasi baru -->
 
 
-<div class="w3-row">
-  <!-- Satu Baris -->
-  <div class="w3-col s10 w3-center">
-    <div>
-    .
-    </div>
-  </div>
-  <div class="w3-col s1 w3-center">
-    <div>
-    <img src="images/coin.png" alt="" width="30px">
-    </div>
-  </div>
-  <div class="w3-col s1 w3-center">
-    122
+
+  <div class="w3-panel w3-white w3-round-large">
+    
+    <p><i class='fas fa-user-circle'></i> <b>miqbalhanafri :</b> Man jadda wa jada, innallaaha ma'anaa, fastabiqul khoiroot.</p>
   </div>
 
-</div>
-
-<div class="w3-center">
-	<img src="images/robot.png" alt="" width="50%">
-</div>
-
-<center>
-  <div id="app"></div>
-</center>
-
-
-<!--
-<div class="w3-row">
-
-  <div class="w3-col s1">
-    <i class="far fa-calendar-check"></i>
-  </div>
-  <div class="w3-col s11 w3-center">
-    <div class="w3-light-grey w3-round-xlarge">
-      <div class="w3-container w3-blue w3-round-xlarge" style="width:25%">25%</div>
-    </div>
+  <div class="w3-panel w3-white w3-round-large">
+    <p><i class='fas fa-user-circle'></i> <b>hielwah :</b> London is the most populous city in the United Kingdom,
+    with a metropolitan area of over 9 million inhabitants.</p>
   </div>
 
-</div>
--->
+
+
+  <div class="w3-panel w3-white w3-round-large">
+    <p>London is the most populous city in the United Kingdom,
+    with a metropolitan area of over 9 million inhabitants.</p>
+  </div>
 
 
 
-
-
-
-<div class="w3-center">
-<button type="submit" name="login" class="w3-button w3-section w3-theme-d2 w3-ripple w3-round-xxlarge">Start</button>
-</div>
 
 
 
@@ -277,7 +186,9 @@ $tampil5 = query("SELECT progress.user, SUM(marketing.points) AS total5, user.us
 </div>
 
 
-<!-- Script untuk Sidebar --> 
+
+
+<!-- Awal Script untuk Sidebar --> 
 <script>
 closeSidebar();
 function openSidebar() {
@@ -288,127 +199,37 @@ function closeSidebar() {
   document.getElementById("mySidebar").style.display = "none";
 }
 </script>
-<!-- Last Script untuk Sidebar --> 
+<!-- Akhir Script untuk Sidebar --> 
 
 
+
+
+<!-- Awal Script untuk Toogle Darkmode --> 
 <script>
-  // Credit: Mateusz Rybczonec
-
-const FULL_DASH_ARRAY = 283;
-const WARNING_THRESHOLD = 10;
-const ALERT_THRESHOLD = 5;
-
-const COLOR_CODES = {
-  info: {
-    color: "green"
-  },
-  warning: {
-    color: "orange",
-    threshold: WARNING_THRESHOLD
-  },
-  alert: {
-    color: "red",
-    threshold: ALERT_THRESHOLD
+// On page load set the theme.
+(function() {
+	let onpageLoad = localStorage.getItem("theme") || "";
+	let element = document.body;
+	element.classList.add(onpageLoad);
+	document.getElementById("theme").textContent =
+	  localStorage.getItem("theme") || "light";
+  })();
+  
+  function themeToggle() {
+	let element = document.body;
+	element.classList.toggle("dark-mode");
+  
+	let theme = localStorage.getItem("theme");
+	if (theme && theme === "dark-mode") {
+	  localStorage.setItem("theme", "");
+	} else {
+	  localStorage.setItem("theme", "dark-mode");
+	}
+  
+	document.getElementById("theme").textContent = localStorage.getItem("theme");
   }
-};
-
-const TIME_LIMIT = 20;
-let timePassed = 0;
-let timeLeft = TIME_LIMIT;
-let timerInterval = null;
-let remainingPathColor = COLOR_CODES.info.color;
-
-document.getElementById("app").innerHTML = `
-<div class="base-timer">
-  <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-    <g class="base-timer__circle">
-      <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
-      <path
-        id="base-timer-path-remaining"
-        stroke-dasharray="283"
-        class="base-timer__path-remaining ${remainingPathColor}"
-        d="
-          M 50, 50
-          m -45, 0
-          a 45,45 0 1,0 90,0
-          a 45,45 0 1,0 -90,0
-        "
-      ></path>
-    </g>
-  </svg>
-  <span id="base-timer-label" class="base-timer__label">${formatTime(
-    timeLeft
-  )}</span>
-</div>
-`;
-
-startTimer();
-
-function onTimesUp() {
-  clearInterval(timerInterval);
-}
-
-function startTimer() {
-  timerInterval = setInterval(() => {
-    timePassed = timePassed += 1;
-    timeLeft = TIME_LIMIT - timePassed;
-    document.getElementById("base-timer-label").innerHTML = formatTime(
-      timeLeft
-    );
-    setCircleDasharray();
-    setRemainingPathColor(timeLeft);
-
-    if (timeLeft === 0) {
-      onTimesUp();
-    }
-  }, 1000);
-}
-
-function formatTime(time) {
-  const minutes = Math.floor(time / 60);
-  let seconds = time % 60;
-
-  if (seconds < 10) {
-    seconds = `0${seconds}`;
-  }
-
-  return `${minutes}:${seconds}`;
-}
-
-function setRemainingPathColor(timeLeft) {
-  const { alert, warning, info } = COLOR_CODES;
-  if (timeLeft <= alert.threshold) {
-    document
-      .getElementById("base-timer-path-remaining")
-      .classList.remove(warning.color);
-    document
-      .getElementById("base-timer-path-remaining")
-      .classList.add(alert.color);
-  } else if (timeLeft <= warning.threshold) {
-    document
-      .getElementById("base-timer-path-remaining")
-      .classList.remove(info.color);
-    document
-      .getElementById("base-timer-path-remaining")
-      .classList.add(warning.color);
-  }
-}
-
-function calculateTimeFraction() {
-  const rawTimeFraction = timeLeft / TIME_LIMIT;
-  return rawTimeFraction - (1 / TIME_LIMIT) * (1 - rawTimeFraction);
-}
-
-function setCircleDasharray() {
-  const circleDasharray = `${(
-    calculateTimeFraction() * FULL_DASH_ARRAY
-  ).toFixed(0)} 283`;
-  document
-    .getElementById("base-timer-path-remaining")
-    .setAttribute("stroke-dasharray", circleDasharray);
-}
 </script>
+<!-- Akhir Script untuk Toogle Darkmode -->
 
 </body>
 </html>
-
