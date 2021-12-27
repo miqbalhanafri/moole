@@ -48,9 +48,9 @@ if ( isset($_POST["register"]) ) {
 
 <div class="w3-container w3-margin-top w3-mobile">
 
-	<form action="" method="POST" class="w3-container w3-large w3-theme-d4">
+	<form action="" method="POST" class="w3-container w3-medium w3-theme-d4">
 
-	<h1>Register now</h1>
+	<p class="w3-xlarge">Register now</p>
 <?php if (isset($error)) : ?>
 	<p style="color: red; font-style: italic;">Sorry, your password is incorrect</p>
 <?php endif; ?>

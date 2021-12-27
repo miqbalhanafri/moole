@@ -100,7 +100,7 @@ if ( isset($_POST["login"])) {
 
 	<form action="" method="POST" class="w3-container w3-medium w3-theme-d4">
 
-	<h3>Log in</h3>
+	<p class="w3-xlarge">Log in</p>
 <?php if (isset($error)) : ?>
 	<p style="color: red; font-style: italic;">Sorry, your password is incorrect</p>
 <?php endif; ?>
