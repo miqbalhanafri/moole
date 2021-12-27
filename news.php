@@ -150,43 +150,32 @@ body {
 
 <!-- Awal aplikasi baru -->
 <div class="w3-content w3-display-container" style="max-width:900px">
+  <div class="w3-container w3-margin-top w3-medium w3-mobile">
 
 
-
-  
-  <div class="w3-card-4" style="width:100%">
-  <iframe width="100%" src="https://www.youtube.com/embed/9DVXD80YU00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <div class="w3-container w3-center">
-      <p>The Italian / Austrian Alps</p>
-    </div>
-  </div>
-  <div class="w3-card-4" style="width:100%">
-    <img src="images/news_image/image2.jpg" alt="Alps" style="width:100%">
-    <div class="w3-container w3-center">
-      <p>The Italian / Austrian Alps</p>
-    </div>
-  </div>
-  <div class="w3-card-4" style="width:100%">
-    <img src="images/news_image/image3.jpg" alt="Alps" style="width:100%">
-    <div class="w3-container w3-center">
-      <p>The Italian / Austrian Alps</p>
-    </div>
+  <div class="w3-panel w3-white w3-round-large">
+    <p><i class='fas fa-user-circle'></i> 
+    <b>miqbalhanafri</b></p>
+    <img src="images/news_image/image1.jpg" class="w3-round-large" alt="Alps" style="width:100%">
+    <p>Man jadda wa jada, innallaaha ma'anaa, fastabiqul khoiroot.</p>
   </div>
 
+  <div class="w3-panel w3-white w3-round-large">
+    <p><i class='fas fa-user-circle'></i> 
+    <b>miqbalhanafri</b></p>
+    <img src="images/news_image/image2.jpg" class="w3-round-large" alt="Alps" style="width:100%">
+    <p>Man jadda wa jada, innallaaha ma'anaa, fastabiqul khoiroot.</p>
+  </div>
+
+  <div class="w3-panel w3-white w3-round-large">
+    <p><i class='fas fa-user-circle'></i> 
+    <b>miqbalhanafri</b></p>
+    <img src="images/news_image/image3.jpg" class="w3-round-large" alt="Alps" style="width:100%">
+    <p>Man jadda wa jada, innallaaha ma'anaa, fastabiqul khoiroot.</p>
+  </div>
 
 
-
-
-
-  
-
-
-
-
-
-  
-
-
+  </div>
 </div>
 <!-- Akhir aplikasi baru -->
 

@@ -150,6 +150,8 @@ body {
 
 <!-- Awal aplikasi baru -->
 <div class="w3-content w3-display-container" style="max-width:900px">
+<div class="w3-container w3-margin-top w3-medium w3-mobile">
+
 
   <br>
   <div class="w3-center">
@@ -157,9 +159,9 @@ body {
   </div>
   <br>
 
+  <div class="w3-panel w3-white w3-round-large">
 
-
-  <table class="w3-table w3-white" style='color:#012641'>
+  <table class="w3-table" style='color:#012641'>
     <tr>
       <td><p><i class='fas fa-user-graduate' style='color:#012641'></i></p></td>
       <td><p style="font-weight:bold;">Username</p></td>
@@ -173,6 +175,8 @@ body {
       <td><p>***********</p></td>
     </tr>
   </table>
+
+  </div>
 
 
   <div class="w3-center">
@@ -193,7 +197,7 @@ body {
 
   
 
-
+</div>
 </div>
 <!-- Akhir aplikasi baru -->
 

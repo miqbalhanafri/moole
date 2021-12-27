@@ -152,6 +152,7 @@ body {
 <div class="w3-content w3-display-container" style="max-width:900px">
 
 
+
   <div class="w3-center">
     <img src="images/podium.png" alt="podium" style="width:200px">
   </div>
