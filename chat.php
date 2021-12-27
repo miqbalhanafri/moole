@@ -134,7 +134,7 @@ body {
       <!--<div id="theme"></div>-->
   </div>
   <div class="w3-center">
-  	<h5>Let's learn</h5>
+  	<h5>Chat Room</h5>
   </div>
 </header>
 <!-- Akhir header -->
