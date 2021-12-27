@@ -160,7 +160,7 @@ body {
   <table class="w3-table w3-small">
     <tr class="w3-white">
       <td><p><img src="images/avatar.png" class="w3-circle" alt="avatar" style="width:50px"></p></td>
-      <td><h5>1. miqbalhanafri</h5>
+      <td><p class="w3-medium">1. miqbalhanafri</p>
           <p><div class="w3-light-grey w3-round-xlarge w3-tiny">
               <div class="w3-container w3-blue w3-round-xlarge" style="width:90%;height:10px;"></div>
             </div></p></td>
@@ -168,7 +168,7 @@ body {
     </tr>
     <tr>
       <td><p><img src="images/avatar.png" class="w3-circle" alt="avatar" style="width:50px"></p></td>
-      <td><h5>2. basmatulhielwah</h5>
+      <td><p class="w3-medium">2. basmatulhielwah</p>
           <p><div class="w3-light-grey w3-round-xlarge w3-tiny">
               <div class="w3-container w3-blue w3-round-xlarge" style="width:80%;height:10px;"></div>
             </div></p></td>
@@ -176,7 +176,7 @@ body {
     </tr>
     <tr class="w3-white">
       <td><p><img src="images/avatar.png" class="w3-circle" alt="avatar" style="width:50px"></p></td>
-      <td><h5>3. zidnamuflih</h5>
+      <td><p class="w3-medium">3. zidnamuflih</p>
           <p><div class="w3-light-grey w3-round-xlarge w3-tiny">
               <div class="w3-container w3-blue w3-round-xlarge" style="width:70%;height:10px;"></div>
             </div></p></td>
@@ -184,7 +184,7 @@ body {
     </tr>
     <tr>
       <td><p><img src="images/avatar.png" class="w3-circle" alt="avatar" style="width:50px"></p></td>
-      <td><h5>4. azimanandi</h5>
+      <td><p class="w3-medium">4. azimanandi</p>
           <p><div class="w3-light-grey w3-round-xlarge w3-tiny">
               <div class="w3-container w3-blue w3-round-xlarge" style="width:60%;height:10px;"></div>
             </div></p></td>
@@ -192,7 +192,7 @@ body {
     </tr>
     <tr class="w3-white">
       <td><p><img src="images/avatar.png" class="w3-circle" alt="avatar" style="width:50px"></p></td>
-      <td><h5>5. kartikasari</h5>
+      <td><p class="w3-medium">5. kartikasari</p>
           <p><div class="w3-light-grey w3-round-xlarge w3-tiny">
               <div class="w3-container w3-blue w3-round-xlarge" style="width:50%;height:10px;"></div>
             </div></p></td>
@@ -200,7 +200,7 @@ body {
     </tr>
     <tr>
       <td><p><img src="images/avatar.png" class="w3-circle" alt="avatar" style="width:50px"></p></td>
-      <td><h5>6. rezahanafri</h5>
+      <td><p class="w3-medium">6. rezahanafri</p>
           <p><div class="w3-light-grey w3-round-xlarge w3-tiny">
               <div class="w3-container w3-blue w3-round-xlarge" style="width:40%;height:10px;"></div>
             </div></p></td>
