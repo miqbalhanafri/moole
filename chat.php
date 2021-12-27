@@ -144,7 +144,7 @@ body {
 
 <div class="w3-content w3-display-container" style="max-width:900px">
 
-<div class="w3-container w3-margin-top w3-large w3-mobile">
+<div class="w3-container w3-margin-top w3-medium w3-mobile">
 
 <!-- Awal aplikasi baru -->
 
