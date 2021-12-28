@@ -120,8 +120,8 @@ body {
     <a class="w3-bar-item w3-button" href="menu.php"><i class="fas fa-book"></i>&nbsp;&nbsp;Learn</a>
     <a class="w3-bar-item w3-button" href="leaderboard.php"><i class="fas fa-award"></i>&nbsp;&nbsp;Rank</a>
     <a class="w3-bar-item w3-button" href="chat.php"><i class="fas fa-comment"></i>&nbsp;&nbsp;Chat</a>
-    <a class="w3-bar-item w3-button" href="profile.php"><i class="fas fa-user-graduate"></i>&nbsp;&nbsp;Profile</a>
     <a class="w3-bar-item w3-button" href="news.php"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;News</a>
+    <a class="w3-bar-item w3-button" href="profile.php"><i class="fas fa-user-graduate"></i>&nbsp;&nbsp;Profile</a>
     <a class="w3-bar-item w3-button" href="logout.php"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;Log out</a>
   </div>
 </nav>
