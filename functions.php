@@ -1,7 +1,7 @@
 <?php 
 //koneksi ke database
-//$conn = mysqli_connect("localhost", "root", "", "moole");
-$conn = mysqli_connect("localhost", "u7172209_moole", "u7172209_moole", "u7172209_moole");
+$conn = mysqli_connect("localhost", "root", "", "moole");
+//$conn = mysqli_connect("localhost", "u7172209_moole", "u7172209_moole", "u7172209_moole");
 
 
 // function ini menerima query dari halaman lain
