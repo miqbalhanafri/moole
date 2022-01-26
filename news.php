@@ -9,38 +9,6 @@ if ( !isset($_SESSION["login"]) ) {
 // memanggil functions.php
 require 'functions.php';
 
-$userid = $_SESSION["userId"]; 
-$userku = query("SELECT username FROM user WHERE id = '$userid' ");
-$info = query("SELECT informasi FROM info_admin");
-
-$tampil = query("SELECT progress.user, SUM(marketing.points) AS totalpoints
-	FROM marketing 
-	LEFT JOIN progress ON progress.opsi = marketing.id 
-	WHERE progress.user = '$userid'
-	GROUP BY user
-	ORDER BY SUM(marketing.points) DESC 
-	");
-
-$tampil2 = query("SELECT progress.user, SUM(marketing.points) AS total2, user.username, uploadfoto.gambar, uploadfoto.motivasi
-	FROM (((progress
-	LEFT JOIN marketing ON progress.opsi = marketing.id)
-	LEFT JOIN user ON progress.user=user.id)
-	LEFT JOIN uploadfoto ON progress.user=uploadfoto.user)
-	");
-
-$tampil4 = query("SELECT * FROM uploadfoto WHERE user='$userid' ");
-
-$tampil3 = query("SELECT COUNT(id) FROM progress WHERE user='$userid' ");
-
-$tampil5 = query("SELECT progress.user, SUM(marketing.points) AS total5, user.username, uploadfoto.gambar, uploadfoto.motivasi
-	FROM (((progress
-	LEFT JOIN marketing ON progress.opsi = marketing.id)
-	LEFT JOIN user ON progress.user=user.id)
-	LEFT JOIN uploadfoto ON progress.user=uploadfoto.user)
-	GROUP BY user 
-	HAVING SUM(marketing.points) 
-	ORDER BY SUM(marketing.points) DESC 
-	");
 
 
 ?>
@@ -111,14 +79,14 @@ body {
     </div><br>
     <div class="w3-padding w3-center">
       <a href="profile.php" style="text-decoration:none;">
-        <img src="uploadfoto/5fbaaff143fa4.jpg" class="w3-circle bulat" alt="moole">	
+        <img src="images/avatar.png" class="w3-circle bulat" alt="moole">	
         <p>M. IQbaL Hanafri</p>
         <img src="images/coin.png" alt="" width="30px"> 122
       </a>
     </div>
     <br>
     <a class="w3-bar-item w3-button" href="menu.php"><i class="fas fa-book"></i>&nbsp;&nbsp;Learn</a>
-    <a class="w3-bar-item w3-button" href="leaderboard.php"><i class="fas fa-award"></i>&nbsp;&nbsp;Rank</a>
+    <a class="w3-bar-item w3-button" href="rank.php"><i class="fas fa-award"></i>&nbsp;&nbsp;Rank</a>
     <a class="w3-bar-item w3-button" href="chat.php"><i class="fas fa-comment"></i>&nbsp;&nbsp;Chat</a>
     <a class="w3-bar-item w3-button" href="news.php"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;News</a>
     <a class="w3-bar-item w3-button" href="profile.php"><i class="fas fa-user-graduate"></i>&nbsp;&nbsp;Profile</a>

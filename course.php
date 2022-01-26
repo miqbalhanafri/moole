@@ -1,8 +1,3 @@
-<?php 
-require 'functions.php';
-
-?>
-
 <!DOCTYPE html>
 <html>
 <title>Moole - Motivation and Learning</title>

@@ -1,10 +1,9 @@
 <?php 
-
 session_start();
 require 'functions.php';
 
-// set cookie
-if ( isset($_COOKIE['id']) && isset($_COOKIE['key']) ) {
+// cek cookie
+if( isset($_COOKIE['id']) && isset($_COOKIE['key']) ) {
 	$id = $_COOKIE['id'];
 	$key = $_COOKIE['key'];
 
@@ -13,60 +12,53 @@ if ( isset($_COOKIE['id']) && isset($_COOKIE['key']) ) {
 	$row = mysqli_fetch_assoc($result);
 
 	// cek cookie dan username
-	if ( $key === hash('sha256', $row['username']) ) {
+	if( $key === hash('sha256', $row['username']) ) {
 		$_SESSION['login'] = true;
 	}
 
-	
+
 }
 
-if ( isset($_SESSION["login"]) ) {
+if( isset($_SESSION["login"]) ) {
 	header("Location: menu.php");
 	exit;
 }
 
 
-if ( isset($_POST["login"])) {
-	
+if( isset($_POST["login"]) ) {
+
 	$username = $_POST["username"];
 	$password = $_POST["password"];
 
 	$result = mysqli_query($conn, "SELECT * FROM user WHERE username = '$username'");
 
 	// cek username
-	if ( mysqli_num_rows($result) === 1 ) {
-		
+	if( mysqli_num_rows($result) === 1 ) {
+
 		// cek password
 		$row = mysqli_fetch_assoc($result);
-		if ( password_verify($password, $row["password"]) ) {
+		if( password_verify($password, $row["password"]) ) {
 			// set session
 			$_SESSION["login"] = true;
-			
 
-			$_SESSION["userId"] = $row["id"];
-				
 			// cek remember me
-			if ( isset($_POST["remember"]) ) {
-				//buat cookie
-				setcookie('login', 'true', time() + 60 );
-				setcookie('key', hash('sha256', $row['username']), time() + 60);
+			if( isset($_POST['remember']) ) {
+				// buat cookie
+				setcookie('id', $row['id'], time()+(86400*30));
+				setcookie('key', hash('sha256', $row['username']), time()+(86400*30));
 			}
 
 			header("Location: menu.php");
 			exit;
 		}
-
 	}
 
-	// jika cek username ada error kesini
 	$error = true;
+
 }
 
 
-
- ?>
-
-
+?>
 <!DOCTYPE html>
 <html>
 <title>Moole - Motivation and Learning</title>
@@ -114,8 +106,8 @@ if ( isset($_POST["login"])) {
 	</p>
 
 	<p>
-	<input class="w3-check" type="checkbox" checked="checked" name="remember">
-	<label>Stay logged in</label></p>
+	<input class="w3-check" type="checkbox" checked="checked" name="remember" id="remember">
+	<label for="remember">Stay logged in</label></p>
 
 	<p>
 	<button type="submit" name="login" class="w3-button w3-section w3-theme-d2 w3-ripple w3-round-xxlarge"> Log in</button>
