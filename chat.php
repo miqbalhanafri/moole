@@ -10,7 +10,6 @@ if ( !isset($_SESSION["login"]) ) {
 require 'functions.php';
 
 
-
 ?>
 
 
@@ -26,6 +25,7 @@ require 'functions.php';
 <link rel="shortcut icon" href="images/favicon.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style/warna.css">
+
 
 <style>
 .checked {
@@ -46,7 +46,6 @@ body {
     background-color: black;
     color: white;
   }
-
 
 </style>
 
@@ -118,8 +117,7 @@ body {
 
 
 
-  <div class="w3-panel w3-white w3-round-large">
-    
+  <div class="w3-panel w3-white w3-round-large" id="messages">
     <p><i class='fas fa-user-circle'></i> <b>miqbalhanafri :</b> Man jadda wa jada, innallaaha ma'anaa, fastabiqul khoiroot.</p>
   </div>
 
@@ -128,12 +126,27 @@ body {
     with a metropolitan area of over 9 million inhabitants.</p>
   </div>
 
-
-
   <div class="w3-panel w3-white w3-round-large">
-    <p>London is the most populous city in the United Kingdom,
+    <p><i class='fas fa-user-circle'></i> <b>hielwah :</b> London is the most populous city in the United Kingdom,
     with a metropolitan area of over 9 million inhabitants.</p>
   </div>
+
+  <div class="w3-panel w3-white w3-round-large">
+    <p><i class='fas fa-user-circle'></i> <b>hielwah :</b> London is the most populous city in the United Kingdom,
+    with a metropolitan area of over 9 million inhabitants.</p>
+  </div>
+
+  <div class="w3-panel w3-white w3-round-large">
+    <p><i class='fas fa-user-circle'></i> <b>hielwah :</b> London is the most populous city in the United Kingdom,
+    with a metropolitan area of over 9 million inhabitants.</p>
+  </div>
+
+  <div class="w3-panel w3-white w3-round-large">
+    <p><i class='fas fa-user-circle'></i> <b>hielwah :</b> London is the most populous city in the United Kingdom,
+    with a metropolitan area of over 9 million inhabitants.</p>
+  </div>
+
+
 
 
 
@@ -152,6 +165,14 @@ body {
 </div>
 
 </div>
+
+
+
+
+<footer class="w3-container w3-bottom w3-white w3-margin-top">
+  <input class="w3-input w3-animate-input" type="text" style="width:50%" name="password" placeholder="Your messages" required>  
+  <button type="submit" name="send" class="w3-button w3-section w3-theme-d2 w3-ripple w3-round-xxlarge">Send</button>
+</footer>
 
 
 
